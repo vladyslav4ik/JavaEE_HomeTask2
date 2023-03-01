@@ -16,9 +16,9 @@
         <option value="east">East</option>
     </select><br/>
     <label>Area: </label>
-    <input type="text" name="area" required/><br/>
+    <input type="number" min="50" max="500" step="10" name="area" required/><br/>
     <label>Number of rooms: </label>
-    <input type="text" name="no_rooms" required><br/>
+    <input type="number" min="1" max="10" step="1" name="no_rooms" required><br/>
     <label>Price: </label>
     <input type="range" value="50000" min="5000" max="100000" step="5000" name="price" required
            oninput="amount.value=price.value">
